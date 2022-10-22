@@ -11,6 +11,29 @@
   justify-content: space-between;
 }
 
+@keyframes movimenCard {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.moviment-card {
+  animation-name: movimenCard;
+  animation-duration: 0.5s;
+}
+
 .cc-logo {
   display: flex;
   justify-content: space-between;
